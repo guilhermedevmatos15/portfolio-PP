@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+
+@import './fonts.scss';
+@import './variables.scss';
+@import './reset.scss';
+
+body {
+   width: 100%;
+   min-height: 100vh;
+   background-color: $color-bg;
+   font-family: $font-default;
+}
