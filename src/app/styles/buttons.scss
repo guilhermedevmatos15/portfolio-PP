@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+@import './variables.scss';
+
+.btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+   padding: 8px 10px;
+   border: none;
+   border-radius: 5px;
+   font-size: 0.9rem;
+   font-family: $font-default;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all $transition;
+
+   .btn-icon {
+      font-size: 1rem;
+   }
+}

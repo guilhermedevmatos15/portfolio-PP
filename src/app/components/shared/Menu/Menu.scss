@@ -1,0 +1,52 @@
+@charset 'UTF-8';
+
+@import '../../../styles/variables.scss';
+
+.Menu {
+   position: fixed;
+   top: -100vh;
+   left: 0;
+   z-index: 10;
+   opacity: 0.1;
+   width: 100%;
+   min-height: 100vh;
+   padding: 30px;
+   overflow-y: auto;
+   background-color: rgba(0, 0, 0, 0.85);
+   backdrop-filter: blur(8px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 30px;
+   transition: all $transition;
+
+   .icon-close {
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      color: $color-text-dark;
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: all $transition;
+
+      &:hover {
+         color: rgb(255, 82, 82);
+      }
+   }
+
+   .Navigation {
+      ul {
+         li,
+         a {
+            color: $color-text-dark;
+            font-size: 1.3rem;
+         }
+      }
+   }
+
+   &.open {
+      top: 0;
+      opacity: 1;
+   }
+}

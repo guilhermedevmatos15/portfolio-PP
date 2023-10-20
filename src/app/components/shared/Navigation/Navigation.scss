@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+@import '../../../styles/variables.scss';
+
+.Navigation {
+   ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+
+      li, a {
+         color: $color-text;
+         text-transform: capitalize;
+         text-decoration: none;
+         cursor: pointer;
+         transition: color $transition;
+
+         &:hover {
+            color: lighten($color-01, 10);
+         }
+      }
+   }
+}
+
+// ? Dark
+.App.dark .Navigation {
+   ul {
+      li, a {
+         color: $color-text-dark;
+         transition: all $transition;
+
+         &:hover {
+            color: lighten($color-01, 5);
+         }
+      }
+   }
+}

@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+@import '../../../styles/variables.scss';
+
+.Footer {
+   margin-top: 220px;
+   width: 100%;
+   padding: 30px;
+   background-color: darken($color-01, 20);
+   color: white;
+   text-align: center;
+}
+
+// ? Dark
+.App.dark .Footer {
+   background-color: $color-01;
+}

@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+@import '../../../styles/variables.scss';
+
+.Header {
+   @media (max-width: 640px) {
+      & {
+         justify-content: space-between;
+         padding: 0 50px;
+
+         .Navigation,
+         .ToggleThemeBtn {
+            display: none;
+         }
+
+         .menu-icon {
+            display: initial;
+         }
+      }
+   }
+}

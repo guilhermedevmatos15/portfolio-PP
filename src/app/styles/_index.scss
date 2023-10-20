@@ -3,10 +3,36 @@
 @import './fonts.scss';
 @import './variables.scss';
 @import './reset.scss';
+@import './buttons.scss';
+@import './section.scss';
+
+html {
+   scroll-behavior: smooth;
+   scroll-padding-top: $height-header + 20px;
+}
 
 body {
    width: 100%;
    min-height: 100vh;
-   background-color: $color-bg;
    font-family: $font-default;
+
+   #root  {
+      width: 100%;
+      min-height: 100vh;
+   }
+   
+   .App {
+      width: 100%;
+      min-height: 100vh;
+      background-color: $color-bg;
+      transition: background-color $transition;
+
+      &.dark {
+         background-color: $color-bg-dark;
+      }
+   }
+
+   img {
+      width: 100px;
+   }
 }

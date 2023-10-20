@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+@import '../../../styles/variables.scss';
+
+.Header {
+   width: 100%;
+   height: $height-header;
+   position: fixed;
+   top: 0;
+   z-index: 5;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: transparent;
+   backdrop-filter: blur(6px);
+
+   > a {
+      text-decoration: none;
+
+      .header-logo {
+         height: 30px;
+      }
+   }
+
+   .menu-icon {
+      display: none;
+      font-size: 1.3rem;
+      color: $color-text;
+      cursor: pointer;
+      transition: all $transition;
+
+      &:hover {
+         color: $color-01;
+      }
+   }
+}
+
+// ? Dark
+.App.dark .Header {
+   .menu-icon {
+      color: $color-text-dark;
+   }
+}

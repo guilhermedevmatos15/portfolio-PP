@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@import '../../../styles/variables.scss';
+@import '../../../styles/section.scss';
+
+.Projects {
+   @include section(180px, 1300px, 30px);
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   text-align: center;
+
+   > p {
+      font-size: 1.05rem;
+      color: $color-text;
+   }
+
+   .container-projects {
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+   }
+}
+
+// ? Dark
+
+.App.dark .Projects {
+   > p {
+      color: $color-text-dark;
+   }
+}

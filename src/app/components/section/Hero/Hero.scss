@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@import '../../../styles/variables.scss';
+@import '../../../styles/section.scss';
+
+.Hero {
+   @include section(80px, 1600px, 30px);
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 200px;
+
+   .hero-content {
+      h1 {
+         font-size: 2.7rem;
+         font-weight: 400;
+         line-height: 3.5rem;
+
+         span {
+            color: $color-01;
+            font-family: $font-secondary;
+            font-weight: 600;
+         }
+      }
+
+      p {
+         margin-top: 10px;
+         font-size: 1.1rem;
+         color: rgba($color: $color-text, $alpha: 0.9);
+      }
+
+      .hero-buttons {
+         margin-top: 20px;
+
+         a {
+            display: block;
+            width: 84px;
+            text-decoration: none;
+         }
+
+         button {
+            background-color: $color-02;
+            color: $color-text-dark;
+
+            &:hover {
+               background-color: $color-03;
+            }
+         }
+      }
+   }
+
+   .hero-container-image {
+      img {
+         width: 400px;
+         transition: transform $transition;
+         border-radius: 50%;
+
+         &:hover {
+            transform: scale(105%);
+         }
+      }
+   }
+}
+
+// ? Dark
+
+.App.dark .Hero {
+   .hero-content {
+      h1 {
+         color: $color-text-dark;
+
+         span {
+            color: lighten($color-01, 10);
+         }
+      }
+
+      p {
+         color: rgba($color: $color-text-dark, $alpha: 0.85);
+      }
+   }
+}

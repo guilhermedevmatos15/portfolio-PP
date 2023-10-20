@@ -4,16 +4,18 @@ import ReactDOM from 'react-dom/client';
 // * test
 import reportWebVitals from './tests/reportWebVitals';
 
-// * style
-import './app/styles/_index.scss';
-
 // * components
-import App from './App.jsx';
+import App from './App.js';
+
+// * contexts
+import ThemeContext from './app/contexts/ThemeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <React.StrictMode>
-      <App />
+      <ThemeContext>
+         <App />
+      </ThemeContext>
    </React.StrictMode>
 );
 

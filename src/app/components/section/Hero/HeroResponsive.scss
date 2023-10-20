@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@import '../../../styles/variables.scss';
+@import '../../../styles/section.scss';
+
+.Hero {
+   @media (max-width: 1100px) {
+      & {
+         @include section(50px, 1600px, 25px);
+
+         flex-direction: column-reverse;
+         gap: 40px;
+
+         .hero-content {
+            text-align: center;
+
+            .hero-buttons {
+               display: flex;
+               justify-content: center;
+               
+               a, button {
+                  width: 100%;
+                  max-width: 150px;
+               }
+            }
+         }
+
+         .hero-container-image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            img {
+               width: 100%;
+               max-width: 250px;
+            }
+         }
+      }
+   }
+}

@@ -1,9 +1,30 @@
 @charset 'UTF-8';
 
-$color-bg: #E8E6DD;
+$font-default: 'Montserrat', sans-serif;
+$font-secondary: 'Fira Code', $font-default, monospace;
 
-$color-01: #F4D10A;
-$color-02: #212121;
-$color-03: #D1D1D1;
+$transition: 0.6s;
 
-$font-default: 'Inter', sans-serif;
+$height-header: 80px;
+
+// ? Light theme
+
+$color-bg: #e8e6dd;
+
+$color-01: #016a70;
+$color-02: #088395;
+$color-03: #05BFDB;
+$color-04: #00FFCA;
+
+$color-text: #181818;
+
+// ? Dark theme
+
+$color-bg-dark: #171716;
+
+$color-01-dark: #016a70;
+$color-02-dark: #ffffdd;
+$color-03-dark: #d2de32;
+$color-04-dark: #a2c579;
+
+$color-text-dark: #e8e8e8;

@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+@import './variables.scss';
+
+@mixin section($margin-top, $max-width, $padding-side: 20px) {
+   margin: $margin-top auto 0 auto;
+   width: 100%;
+   max-width: $max-width;
+   padding: 0 $padding-side;
+}
+
+.title-section {
+   color: $color-01;
+   font-weight: 500;
+   font-size: 2rem;
+   text-align: center;
+}
+
+.App.dark .title-section {
+   color: $color-04;
+}
