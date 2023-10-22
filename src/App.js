@@ -13,7 +13,7 @@ import { themeContext } from './app/contexts/ThemeContext';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({
-   duration: 1300,
+   duration: 1200,
 });
 
 const App = () => {

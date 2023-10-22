@@ -16,8 +16,11 @@ import './About.scss';
 const About = () => {
    return (
       <section className="About" id="about">
-         <h2 className='title-section'>Sobre mim</h2>
-         <p>
+         <h2 className="title-section" data-aos="fade-up">
+            Sobre mim
+         </h2>
+
+         <p data-aos="fade-up" data-aos-duration="1600">
             Sou um jovem estudante do ensino médio. Minha jornada no mundo da
             programação começou recentemente (1 ano atrás), mas desde então,
             minha paixão pelo front-end tem crescido de forma notável. Estou
@@ -25,7 +28,7 @@ const About = () => {
             impulsionam a criação de interfaces web.
          </p>
 
-         <p>
+         <p data-aos="fade-up" data-aos-duration="2000">
             Embora ainda esteja no início dessa jornada, estou determinado a
             aprimorar minhas habilidades e me tornar um desenvolvedor talentoso.
             Estou ansioso para as oportunidades de aprendizado que estão por vir

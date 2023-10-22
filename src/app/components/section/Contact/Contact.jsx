@@ -23,9 +23,15 @@ const Contact = () => {
 
    return (
       <section className="Contact" id="contato">
-         <h2 className="title-section">Contato</h2>
+         <h2 className="title-section" data-aos="fade-up">
+            Contato
+         </h2>
 
-         <div className="container-contacts">
+         <div
+            className="container-contacts"
+            data-aos="zoom-in"
+            data-aos-duration="1600"
+         >
             <div
                className="contact-option"
                onClick={(e) =>
@@ -34,7 +40,9 @@ const Contact = () => {
             >
                <AiOutlineMail className="contact-option-icon" />
                <p className="contact-option-name">Email</p>
-               <p className="contact-option-value">devguilhermeferreira@gmail.com</p>
+               <p className="contact-option-value">
+                  devguilhermeferreira@gmail.com
+               </p>
             </div>
             <div
                className="contact-option"

@@ -38,10 +38,18 @@ const Projects = () => {
 
    return (
       <section className="Projects" id="projetos">
-         <h2 className='title-section'>Projetos</h2>
-         <p>Clique no "card" de cada projeto para saber mais.</p>
+         <h2 className="title-section" data-aos="fade-up">
+            Projetos
+         </h2>
+         <p data-aos="fade-up" data-aos-duration="1400">
+            Clique no "card" de cada projeto para saber mais.
+         </p>
 
-         <div className="container-projects">
+         <div
+            className="container-projects"
+            data-aos="zoom-in"
+            data-aos-duration="1600"
+         >
             {projects.map((project, index) => {
                return (
                   <Project
